@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark's Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+</head>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #330b7e;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+body {
+            margin: 0;
+            font-family: 'Koulen', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.0); 
+            position: fixed; 
+            width: 100%;
+            z-index: 1000; 
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            padding: 0 20px;
+            list-style-type: none;
+        }
+
+        .menu {
+            display: flex; 
+        }
+
+        .menu li {
+            margin: 0 40px; 
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: 0.15s ease-in-out;
+        }
+
+        .menu li a:hover {
+            color: #ffcc00; 
+
+        }
+
+        
+        
+        body {
+            padding-top: 30px; /
+        }
+
+    
+
+/*HOME*/
+
+
+.text1{
+
+    color: #ffffff;
+    font-size: 6rem;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 10px;
+}
+
+
+/*CONTAINERS*/
+
+.container2, .container3, .container4, .container5  {
+            background-color: rgb(51, 51, 51,0.0); 
+            padding: 20px;
+            border-radius: 20px;
+            border-color: black;
+            height: 150%;
+            width: 100%; 
+            box-shadow: 4px 9px 90px rgba(0,0,0,0.8);
+            margin-top: 60px;
+            padding-bottom: 8%;
+        }
+
+        .container3 {
+            background-color: rgb(51, 51, 51,0.0); 
+            padding: 20px;
+            border-radius: 20px;
+            border-color: black;
+            height: 150%;
+            width: 100%; 
+            box-shadow: 4px 9px 90px rgba(0,0,0,0.8);
+            margin-top: 60px;
+            padding-bottom: 5%;
+        }
+
+
+.container-headings {
+
+color: #ffffff;
+position: relative;
+font-size: 3rem;
+text-align: center;
+margin-bottom: 10px;
+}
+
+
+/*ABOUT US*/
+
+.about-content {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: left; 
+    margin-top: 30px; 
+}
+
+.about-image {
+    width: 20%; 
+    height: auto; 
+    border-radius: 5%; 
+    margin-right: 40px; 
+}
+
+.about-text {
+    color: #ffffff; 
+    font-size: 1.2rem; 
+    max-width: 600px; 
+}
+
+/*SKILLS AND WORK EXP*/
+
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-top: 20px; 
+    margin-bottom: 40px;
+}
+
+.skill-image {
+    width: 100px; 
+    height: auto; 
+    margin: 10px; 
+    transition: transform 0.2s; 
+}
+
+.skill-image:hover {
+    transform: scale(1.1); 
+}
+
+/*PROJECTS*/
+
+.container-headings1 {
+
+color: #ffffff;
+position: relative;
+font-size: 1.2rem;
+text-align: center;
+}
+
+.none{
+
+color: #ffffff;
+font-size: 6rem;
+text-align: center;
+padding-top: 50px;
+margin-bottom: 25px;
+}
+
+/*CONTACT*/
+
+
+.contacts {
+    width: 100px; 
+    height: auto; 
+    margin: 10px; 
+    transition: transform 0.2s; 
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-top: 40px; 
+    margin-bottom: 40px;
+}
+
+.contacts:hover {
+    transform: scale(1.1); 
+}
+
+
+/*FOOTER*/
+
+.footer {
+    color: #ffffff;
+    position: relative;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+
+/*RESPONSIVENESS*/
+
+@media (min-width: 1024px) {
+    section {
+        padding: 3rem 1rem;
+    }
+
+    .navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .text1 {
+        font-size: 3rem; /* Further adjust font size */
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack image and text */
+        align-items: center; /* Center align */
+    }
+
+    .about-image {
+        width: 80%; /* Make image larger on mobile */
+        margin: 0 0 20px 0; /* Add margin below image */
+    }
+
+    .menu {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center align */
+    }
+
+    .menu li {
+        margin: 10px 0; /* Adjust margin for vertical spacing */
+    }
+
+    .skill-image {
+        width: 60px; /* Adjust skill image size */
+    }
+
+    .contacts {
+        width: 60px; /* Adjust contact icon size */
+    }
+
+    .container-headings {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .container-headings1 {
+        font-size: 1.2rem; /* Adjust heading size */
+    }
+
+    /* Hide the navbar */
+    .navbar {
+        display: none; /* Hide the navbar */
+    }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+    .text1 {
+        font-size: 2.5rem; /* Further adjust font size */
+    }
+
+    .about-text {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    .skill-image {
+        width: 50px; /* Adjust skill image size */
+    }
+
+    .contacts {
+        width: 50px; /* Adjust contact icon size */
+    }
+
+    .container-headings {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .container-headings1 {
+        font-size: 1rem; /* Adjust heading size */
+    }
+
+    /* Hide the navbar */
+    .navbar {
+        display: none; /* Hide the navbar */
+    }
+}
+
+
+
+</style>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <span class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </span>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+
+        <div class="container1">
+
+            <div class="text1">Welcome to <br> Mark's Portfolio </div>
+
+        </div>
+
+    </section>
+
+    <section id="aboutme">
+
+        <div class="container2">
+
+            <div class="container-headings">About Me</div>
+            <div class="about-content">
+                <img src="image1.jpeg" alt="Mark's Photo" class="about-image">
+                <p class="about-text">
+                    Hello! My name is Mark Ernest Garay. I am a passionate web developer with a love for creating dynamic and user-friendly websites. 
+                    I have experience in various programming languages and frameworks, and I enjoy learning new technologies to enhance my skills. 
+                    In my free time, I like to work on personal projects, explore new coding challenges, and contribute to open-source initiatives. 
+                    I believe in the power of technology to solve problems and improve lives, and I am excited to share my journey with you!
+                </p>
+            </div>
+
+        </div>
+ 
+    </section>
+
+    <section id="skills">
+        <div class="container3">
+
+            <div class="container-headings">Skills</div>
+            <div class="skills-content">
+                <img src="python.png" alt="Python" class="skill-image">
+                <img src="html.png" alt="HTML" class="skill-image">
+                <img src="css.png" alt="CSS" class="skill-image">
+                <img src="canva.png" alt="Canva" class="skill-image">
+                <img src="figma.png" alt="Figma" class="skill-image">
+                <img src="animate.png" alt="Figma" class="skill-image">
+                <img src="photoshop.png" alt="Figma" class="skill-image">
+            </div>
+            <div class="container-headings">Work Experience</div>
+            <div class="container-headings1">I aspire to be a Web Developer</div>
+                
+
+
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <div class="container4">
+
+            <div class="container-headings">Projects</div>
+            <div class="none">NONE <sub>(YET)</sub></div>
+
+
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div class="container5">
+
+            <div class="container-headings">Contact Me On:</div>
+            <div class="contact-container">
+                <a href="https://www.facebook.com/11paglas"> 
+                    <img src="fb.png" alt="Facebook" class="contacts">
+                </a>
+
+                <a href="https://www.instagram.com/?hl=en">
+                    <img src="ig.png" alt="Instagram" class="contacts">
+                </a>
+                
+                <a href="https://github.com/MArK720767">
+                    <img src="gh.png" alt="Github" class="contacts">
+                </a>
+                
+            </div>
+
+            <div class="container-headings1">Email: markernest322@gmail.com</div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer"> © 2024 Mark Ernest Garay. All rights reserved. </footer>
+</body>
+</html>
+
